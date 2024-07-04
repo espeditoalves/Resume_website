@@ -807,11 +807,10 @@ section,
 /*--------------------------------------------------------------
 # Estilo dos Cursos
 --------------------------------------------------------------*/
-/* section.cursos {
+section.cursos {
   padding: 20px 0;
-  /* Adiciona um espaçamento (padding) de 80 pixels na parte superior e inferior da seção cursos 
-} 
-*/
+  /* Adiciona um espaçamento (padding) de 20 pixels na parte superior e inferior da seção cursos */
+}
 
 .cursos .itens-container {
   display: flex;
@@ -821,19 +820,23 @@ section,
   justify-content: space-between;
   /* Distribui espaço entre os itens, com espaçamento igual ao redor */
   gap: 5%;
-  /* Adiciona um espaço de 10% entre os itens */
-  margin-bottom: 0px;
-  /* Adiciona um espaçamento (margem) de 60 pixels abaixo do contêiner */
+  /* Adiciona um espaço de 5% entre os itens */
+  margin-bottom: 0;
+  /* Remove o espaçamento (margem) abaixo do contêiner */
+  flex-wrap: wrap;
+  /* Permite que os itens sejam distribuídos em várias linhas, se necessário */
 }
 
 .cursos .itens-container .txt-itens {
   padding: 40px;
   /* Adiciona um espaçamento interno (padding) de 40 pixels ao redor dos itens de texto */
+  flex: 1 1 50%;
+  /* Faz com que os itens de texto ocupem 50% do espaço disponível */
 }
 
 .cursos .itens-container .img-itens img {
   padding: 10px;
-  /* Adiciona um espaçamento interno (padding) de 40 pixels ao redor da imagem */
+  /* Adiciona um espaçamento interno (padding) de 10 pixels ao redor da imagem */
   max-width: 420px;
   /* Define a largura máxima da imagem como 420 pixels */
   width: 100%;
@@ -889,6 +892,46 @@ section,
   /* Adiciona um espaçamento (margem) de 20 pixels à direita da primeira lista, separando-a das outras */
 }
 
+/* Media Queries para responsividade */
+@media (max-width: 1024px) {
+  .cursos .itens-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cursos .itens-container .txt-itens,
+  .cursos .itens-container .img-itens {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .cursos .itens-container .txt-itens h3 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .cursos .itens-container .txt-itens,
+  .cursos .itens-container .img-itens {
+    padding: 20px;
+  }
+
+  .cursos .itens-container .txt-itens h3 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .cursos .itens-container .txt-itens h3 {
+    font-size: 1.5em;
+    line-height: 1.2;
+  }
+
+  .cursos .itens-container .txt-itens,
+  .cursos .itens-container .img-itens {
+    padding: 10px;
+  }
+}
 
 
 /*--------------------------------------------------------------
