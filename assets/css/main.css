@@ -22,7 +22,6 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  /* --accent-color: #149ddd; Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --accent-color: #4B0082; /* Roxo escuro */
   --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
 }
@@ -38,7 +37,6 @@
 
 /* Template Custom Colors */
 :root {
-  /* --header-background-color: #040b14; */
   --header-background-color: #190920;
   --header-color: #ffffff;
 }
@@ -187,130 +185,6 @@ h6 {
   color: var(--contrast-color);
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
-
-/* Estilos para o header pequeno */
-#small-header.small-header {
-  --background-color: var(--header-background-color);
-  --default-color: var(--header-color);
-  --heading-color: var(--header-color);
-  color: var(--default-color);
-  background-color: var(--background-color);
-  position: fixed;
-  top: 10px; /* Ajuste a posição conforme necessário */
-  left: 10px; /* Ajuste a posição conforme necessário */
-  padding: 10px; /* Padding interno menor */
-  width: 200px; /* Largura reduzida */
-  transition: all ease-in-out 0.3s;
-  overflow-y: hidden; /* Sem overflow */
-  z-index: 997;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  border-radius: 8px; /* Bordas arredondadas */
-}
-
-/* Estilos para a imagem do perfil */
-#small-header .profile-img img {
-  margin: 10px auto;
-  display: block;
-  width: 80px; /* Tamanho menor da imagem */
-  border: 4px solid color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-/* Estilos para o logo */
-#small-header .logo {
-  line-height: 1;
-  margin-bottom: 10px; /* Margem menor */
-}
-
-#small-header .logo h1 {
-  font-size: 16px; /* Tamanho menor do texto */
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading-color);
-}
-
-/* Estilos para os links sociais */
-#small-header .social-links {
-  margin: 0 0 10px 0; /* Margem menor */
-}
-
-#small-header .social-links a {
-  font-size: 12px; /* Tamanho menor dos ícones */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  color: var(--default-color);
-  margin: 0 2px;
-  border-radius: 50%;
-  text-align: center;
-  width: 30px; /* Tamanho menor dos ícones */
-  height: 30px; /* Tamanho menor dos ícones */
-  transition: 0.3s;
-}
-
-#small-header .social-links a:hover {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-}
-
-/* Estilos para o botão de toggle */
-#small-header .header-toggle {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
-  font-size: 18px; /* Tamanho menor do ícone */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px; /* Tamanho menor do botão */
-  height: 30px; /* Tamanho menor do botão */
-  border-radius: 50%;
-  cursor: pointer;
-  position: fixed;
-  top: 15px; /* Posição fixa ajustada */
-  left: 170px; /* Posição fixa ajustada ao lado do header */
-  z-index: 9999;
-  transition: background-color 0.3s;
-}
-
-#small-header .header-toggle:hover {
-  color: var(--contrast-color);
-  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
-}
-
-/* Estilos para o conteúdo principal */
-.main {
-  margin-left: 230px; /* Ajuste para a largura do menu lateral */
-  padding-top: 80px; /* Espaço para o menu lateral */
-}
-
-/* Ajuste para o título da página */
-.page-title {
-  margin-top: 10px; /* Espaço adicional para o título */
-}
-
-/* Estilos para os breadcrumbs */
-.breadcrumbs {
-  margin-left: auto; /* Alinhar à direita */
-}
-
-.breadcrumbs ol {
-  display: flex; /* Flexbox para os breadcrumbs */
-  align-items: center;
-}
-
-.breadcrumbs ol li {
-  list-style: none; /* Remover marcadores */
-  margin-right: 10px; /* Espaçamento entre os itens */
-}
-
-.breadcrumbs ol li.current {
-  font-weight: bold; /* Estilo para o item atual */
-}
-
-
-
-
-
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -531,7 +405,7 @@ h6 {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+  --background-color: color-mix(in srgb, var(--default-color), transparent 80%);
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 25px 0;
@@ -555,6 +429,7 @@ h6 {
 
 .page-title .breadcrumbs ol li+li {
   padding-left: 10px;
+  font-weight: bold;
 }
 
 .page-title .breadcrumbs ol li+li::before {
@@ -700,9 +575,8 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  --background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  --background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
 }
-
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
@@ -767,7 +641,7 @@ section,
 # Skills Section
 --------------------------------------------------------------*/
 .skills {
-  --background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  --background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
 }
 
 .skills .progress {
@@ -997,9 +871,8 @@ section.cursos {
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio {
-  --background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  --background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
 }
-
 .container p {
   text-indent: 20px; /* Define um recuo de 20 pixels na primeira linha do parágrafo */
 }
@@ -1433,7 +1306,7 @@ section.cursos {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  background-color: color-mix(in srgb, var(--default-color), transparent 70%);
   opacity: 1;
 }
 
