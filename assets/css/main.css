@@ -924,7 +924,11 @@ section.cursos {
 
 .portfolio .portfolio-content img {
   transition: 0.3s;
+  width: 100%; /* Ajusta a largura da imagem ao contêiner */
+  height: 200px; /* Define uma altura fixa para as imagens */
+  object-fit: cover; /* Ajusta a imagem para preencher o contêiner sem distorção */
 }
+
 
 .portfolio .portfolio-content .portfolio-info {
   opacity: 0;
