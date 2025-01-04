@@ -1,6 +1,16 @@
 # Portfólio de Espedito Ferreira Alves
 
-Este repositório contém o código-fonte do meu site pessoal, onde apresento uma coleção de projetos e informações relevantes sobre minha carreira como Cientista de Dados e Matemático.
+Este repositório contém o código-fonte do meu [site pessoal](https://espeditoalves.github.io/Resume_website/), onde apresento uma coleção de projetos e informações relevantes sobre minha carreira como Cientista de Dados e Matemático.
+## Contato
+
+- **Nome**: Espedito Ferreira Alves
+- **Whatsapp**: (11)99526-1736
+- **Email**: espeditoalves123@hotmail.com
+- **LinkedIn**: [Espedito Ferreira Alves](https://www.linkedin.com/in/espedito-alves/)
+- **Email universidade**: espeditoalves@usp.br
+- **site**: https://espeditoalves.github.io/Resume_website/
+
+Sinta-se à vontade para explorar e entrar em contato para colaborações ou oportunidades profissionais!
 
 ## Descrição
 
@@ -21,37 +31,10 @@ O site foi desenvolvido para destacar minha experiência, habilidades e projetos
 - **JavaScript**: Implementação de funcionalidades dinâmicas no front-end.
 - **HTML5 e CSS3**: Estruturação e estilização da interface do usuário.
 
-## Como Visualizar o Site
-
-1. Clone este repositório:
-
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-```
-
-2. Abra o arquivo `index.html` no seu navegador web preferido.
-
-## Contato
-
-- **Nome**: Espedito Ferreira Alves
-- **Whatsapp**: (11)99526-1736
-- **Email**: espeditoalves123@hotmail.com
-- **LinkedIn**: [Espedito Ferreira Alves](https://www.linkedin.com/in/espedito-alves/)
-- **Email universidade**: espeditoalves@usp.br
-
-Sinta-se à vontade para explorar e entrar em contato para colaborações ou oportunidades profissionais!
-
 ---
 
-Este saída foi adaptado para atender as minhas necessidade.
-By: Espedito Ferreira Alves
-
----
-Template Name: iPortfolio
-
-Template original URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+Este site foi adaptado para atender as minhas necessidades
+A inspiração para ele veio de: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
 
 Author: BootstrapMade.com
 License: https://bootstrapmade.com/license/
-
-
