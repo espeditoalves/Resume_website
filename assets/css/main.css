@@ -1298,12 +1298,18 @@ section.cursos {
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
+.portfolio-details {
+  width: 100%; /* Faz a seção ocupar toda a largura */
+  max-width: 1600px; /* Ajuste o valor conforme necessário para limitar a largura */
+  margin-left: -50px; /* Move a seção para a esquerda */
+}
+
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  width: 90%;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
 }
 
@@ -1319,7 +1325,11 @@ section.cursos {
 }
 
 .portfolio-details .portfolio-info {
-  padding: 30px;
+  text-align: center;
+  width: 60%; /* Ocupar toda a largura disponível */
+  max-width: 1200px; /* Ajuste a largura máxima conforme necessário */
+  margin: 0 auto; /* Centraliza a .portfolio-info horizontalmente */
+  padding: 30px; /* Aumenta o padding para dar mais espaço */
   box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
@@ -1342,6 +1352,8 @@ section.cursos {
 }
 
 .portfolio-details .portfolio-description {
+  width: 100%;
+  max-width: 1600px; /* Ajuste o valor conforme necessário para limitar a largura */
   padding-top: 30px;
 }
 
