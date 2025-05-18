@@ -676,13 +676,14 @@
               data-aos="fade-up"
               data-aos-delay="100"
             >
+            <!-- Filtra os projetos-->
               <li data-filter="*" class="filter-active">Todos os Projetos</li>
               <li data-filter=".filter-grafico">Analises Exploratórias</li>
               <li data-filter=".filter-grafico">Dashboards</li>
-              <li data-filter=".filter-product">
+              <li data-filter=".filter-ml-classification">
                 Modelos Preditivos - Classificação
               </li>
-              <li data-filter=".filter-books">
+              <li data-filter=".filter-ml-regression">
                 Modelos Preditivos - Regressão
               </li>
             </ul>
@@ -693,6 +694,7 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
+              <!-- Aplicar aqui os filtros  -->
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-grafico">
                 <div class="portfolio-content h-100">
                   <img
@@ -713,6 +715,7 @@
                       href="https://app.powerbi.com/view?r=eyJrIjoiOWIyNzBhY2ItY2UwYy00NDY0LWE4MDItNGIwMGQxNGUxMWM1IiwidCI6ImFlMzhlYzZiLWY3YjEtNDJjMS1hZWM0LWEwYTNmMzgwYzRkZCJ9"
                       title="Acesse Dashboard"
                       class="details-link"
+                      target="_blank"
                       ><i class="bi bi-link-45deg"></i
                     ></a>
                   </div>
@@ -762,7 +765,8 @@
                     <a
                       href="portfolio-spotify-eda.html" 
                       title="Saíba mais" 
-                      class="details-link" 
+                      class="details-link"
+                      target="_blank"
                     >
                       <i class="bi bi-link-45deg"></i> <!-- Ícone de "link" que indica que há mais informações -->
                     </a>
@@ -770,10 +774,40 @@
                 </div>
               </div>
               <!-- Fim do item de portfólio -->
+              <!-- inicio Portfolio Item -->
+              <!-- Aplicar aqui os filtros  -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml-classification">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/titanic_ml_classification/Titanic_black.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Titanic Classification - Evaluation Metrics</h4>
+                    <a
+                      href="assets/img/portfolio/titanic_ml_classification/Titanic_black.png"
+                      title="Titanic Classification - Evaluation Metrics"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-ml-classification.html"
+                      title="More Details"
+                      class="details-link"
+                      target="_blank"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Fim Portfolio Item -->
 
-              <!-- End Portfolio Item -->
 
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <!-- inicio Portfolio Item -->
+              <!-- Aplicar aqui os filtros  -->
+              <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filtros">
                 <div class="portfolio-content h-100">
                   <img
                     src="assets/img/portfolio/product-1.jpg"
@@ -798,8 +832,8 @@
                     ></a>
                   </div>
                 </div>
-              </div>
-              <!-- End Portfolio Item -->
+              </div> -->
+              <!-- Fim Portfolio Item -->
               
             </div>
             <!-- End Portfolio Container -->
