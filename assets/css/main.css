@@ -766,6 +766,7 @@ section.cursos {
   /* Adiciona um espaçamento (margem) de 20 pixels à direita da primeira lista, separando-a das outras */
 }
 
+
 /* Media Queries para responsividade */
 @media (max-width: 1024px) {
   .cursos .itens-container {
@@ -787,7 +788,7 @@ section.cursos {
 @media (max-width: 768px) {
   .cursos .itens-container .txt-itens,
   .cursos .itens-container .img-itens {
-    padding: 20px;
+    gap: 20px;
   }
 
   .cursos .itens-container .txt-itens h3 {
@@ -803,7 +804,60 @@ section.cursos {
 
   .cursos .itens-container .txt-itens,
   .cursos .itens-container .img-itens {
-    padding: 10px;
+    gap: 20px;
+  }
+}
+
+/* Adições específicas de responsividade */
+@media (max-width: 1200px) {
+  .portfolio-details,
+  .portfolio-description,
+  .portfolio-info {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio-details {
+    flex-direction: column !important;
+    padding: 0 10px !important;
+  }
+  .portfolio-info, .portfolio-description {
+    padding: 15px !important;
+    width: 100% !important;
+  }
+  .portfolio-details-slider img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title h1 {
+    font-size: 20px !important;
+  }
+  .portfolio-info ul {
+    padding: 0 10px;
+  }
+  .portfolio-info h3,
+  .portfolio-description h2 {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .portfolio-info,
+  .portfolio-description {
+    padding: 10px !important;
+  }
+  .portfolio-info ul li {
+    font-size: 14px !important;
+  }
+  .portfolio-details-slider img {
+    width: 100% !important;
   }
 }
 
